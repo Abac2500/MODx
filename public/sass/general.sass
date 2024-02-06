@@ -1,0 +1,71 @@
+html
+	height: 100%
+
+body
+	overflow-x: hidden
+	-webkit-text-size-adjust: 100%
+	scroll-behavior: smooth
+	font: normal 400 20px/1.885 var(--font-roboto)
+	color: var(--color-white)
+
+	+media-max-width(900)
+		font-size: 18px
+
+.wrapper
+	display: block
+	width: 100%
+	overflow: hidden
+	position: relative
+	background: var(--color-green)
+	min-height: 100vh
+
+.section
+	position: relative
+
+.container
+	position: relative
+	display: block
+	margin: 0 auto
+	width: 1370px
+	z-index: 3
+
+	+media-max-width(1410)
+		width: calc(100% - 60px)
+
+	+media-max-width(500)
+		width: calc(100% - 40px)
+
+a
+	text-decoration: initial
+	color: var(--color-grey)
+	cursor: pointer
+	transition: all .3s ease
+
+	&:hover,
+	&:active
+		color: var(--color-white)
+
+	&:focus
+		outline: none
+
+.button
+	display: grid
+	align-items: center
+	justify-content: center
+	font: normal 400 18px/1 var(--font-roboto)
+	color: var(--color-white)
+	transition: all .3s ease
+	cursor: pointer
+	box-sizing: border-box
+
+	&:focus
+		outline: none
+
+	&:hover
+		opacity: .75
+
+	&:disabled,
+	&_disabled
+		pointer-events: none
+		cursor: default
+		opacity: .65

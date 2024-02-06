@@ -1,0 +1,169 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      '9abd7c7016ae82d602f063a643c8c4d0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"add_children","description":"perm.add_children_desc","value":1}',
+        'guid' => 'f9aca8e2dcb36fc4141d6cbad460ab55',
+        'native_key' => NULL,
+        'signature' => 'fc31f0e97a660c95bf42f9722f5eaa11',
+      ),
+      '7acee61ef98ac8cfcf769080738d8ce4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"create","description":"perm.create_desc","value":1}',
+        'guid' => 'c0dcaf70c9ccef70d3710c0ed9180008',
+        'native_key' => NULL,
+        'signature' => 'c32dc99bff7fdc13d9d3037663f2cd3f',
+      ),
+      '88134cb27233fc822f97cf6bb82d9cf5' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"copy","description":"perm.copy_desc","value":1}',
+        'guid' => '319780ed95e541f41bf44d7eeb350c69',
+        'native_key' => NULL,
+        'signature' => '38e8a58e4707be39b7132f6b91a638dc',
+      ),
+      'aef8ff8c30af46e7380649f36e4ad77e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"delete","description":"perm.delete_desc","value":1}',
+        'guid' => '35d7b774aa913515d8e3123c137b3779',
+        'native_key' => NULL,
+        'signature' => '98b3484c74f3e9040f3def71a1903aa7',
+      ),
+      'f2b52aa4dc278cb1bb5c14f14b82d5b2' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"list","description":"perm.list_desc","value":1}',
+        'guid' => '68ae02643d44ac6ddfa0d7cd5dca4c38',
+        'native_key' => NULL,
+        'signature' => '877a96a77741489485c0b3b0fa91601e',
+      ),
+      'da70ef02e0a93772621caebdefee4cad' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"load","description":"perm.load_desc","value":1}',
+        'guid' => 'adb364eb410fbea534d5280f67f733f8',
+        'native_key' => NULL,
+        'signature' => '4b9178db8daaf4c17643c225bb059729',
+      ),
+      'b8383dfc44632a499c4d65d457ae97fb' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"remove","description":"perm.remove_desc","value":1}',
+        'guid' => 'f65c41015248df2a322730895133133f',
+        'native_key' => NULL,
+        'signature' => '579c96b73a3207ba3f0585476c09ff4b',
+      ),
+      'e4e9d037b9931f3be609709c8555666a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"save","description":"perm.save_desc","value":1}',
+        'guid' => 'e9c70f82bba1d8b78424ca581fd3480d',
+        'native_key' => NULL,
+        'signature' => '42bc0f84c10ff84666014984b406d87b',
+      ),
+      'b229cdbf14d7c29a16b32bca5887ce56' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'MODX\\Revolution\\modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"view","description":"perm.view_desc","value":1}',
+        'guid' => '7321c7affe6be88495442043aa8b2987',
+        'native_key' => NULL,
+        'signature' => '888aefbc8a314da385fae326dcf1802e',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '24847d49387cccb03619eb3d40d45d0f',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicyTemplate',
+  'signature' => 'c350871f202c0ab634bdb976010ddd0a',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":0,"name":"ElementTemplate","description":"policy_template_element_desc","lexicon":"permissions"}',
+);

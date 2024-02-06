@@ -1,0 +1,74 @@
+.main_background
+	background: url('/public/image/main-background.svg') no-repeat center right
+	background-size: contain
+
+.main__container
+	width: 55%
+	padding: 100px 0 124px
+
+	+media-max-width(1600)
+		width: 70%
+
+	+media-max-width(900)
+		width: 100%
+		padding: 30px 0 110px
+
+.main__title
+	font: 700 70px/1 var(--font-cormorant)
+
+	+media-max-width(900)
+		font-size: 47px
+
+.main__text
+	margin: 96px 0 0
+
+	+media-max-width(900)
+		margin: 30px 0 0
+
+.main
+	&:before
+		position: absolute
+		content: ''
+		left: 0
+		right: 0
+		bottom: 60px
+		height: 1px
+		background: var(--color-light-green)
+
+.main__media
+	position: absolute
+	bottom: 136px
+	left: 70px
+	display: grid
+	grid-row-gap: 24px
+
+	+media-max-width(1600)
+		left: auto
+		right: 30px
+
+	+media-max-width(900)
+		display: none
+
+	&:before
+		position: absolute
+		content: ''
+		background: var(--color-dark-beige)
+		width: 1px
+		height: 154px
+		top: -170px
+		left: 50%
+
+.main__social
+	display: grid
+
+	&:hover
+		.main__icon
+			transform: scale(1.4)
+
+.main__icon
+	display: grid
+	width: 24px
+	height: 18px
+	object-fit: contain
+	object-position: center
+	transition: all .3s ease

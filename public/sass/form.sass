@@ -1,0 +1,138 @@
+.form__container
+	display: grid
+	grid-template-columns: 1fr min-content
+	grid-template-rows: repeat(4, auto)
+	justify-content: space-between
+	padding: 146px 0 75px
+	grid-column-gap: 20px
+
+	+media-max-width(1250)
+		grid-template-columns: 1fr
+
+	+media-max-width(900)
+		padding: 55px 0 60px
+
+.form__text
+	margin: -7px 0 0
+
+	+media-max-width(900)
+		margin: 0
+
+	p
+		font: 700 40px/1 var(--font-cormorant)
+
+		+media-max-width(900)
+			font-size: 30px
+
+.form__form
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-gap: 18px 38px
+
+	+media-max-width(1250)
+		grid-template-columns: 1fr
+		margin: 50px 0 0
+
+	+media-max-width(900)
+		margin: 35px 0 0
+
+.form__item
+	display: grid
+	grid-column: 1
+	width: 380px
+
+	+media-max-width(1250)
+		width: 100%
+		grid-column: 1 !important
+		grid-row: initial !important
+
+	&_row
+		grid-column: 2
+		grid-row: 1 / 4
+
+	&_accept,
+	&_button
+		grid-row: 4
+
+		+media-max-width(1250)
+			justify-content: flex-start
+
+	&_accept
+		grid-column: 1
+
+	&_button
+		grid-column: 2
+
+	&_row,
+	&_button
+		width: 420px
+
+		+media-max-width(1250)
+			width: 100%
+
+	&_accept,
+	&_button
+		margin: 5px 0 0
+
+		+media-max-width(900)
+			margin: 0
+
+.form__input,
+.form__textarea
+	display: grid
+	align-items: center
+	box-sizing: border-box
+	border: 1px solid var(--color-border-beige)
+	font: 400 14px/1 var(--font-roboto)
+	color: var(--color-white)
+	padding: 17px 26px 17px 26px
+	width: 100%
+
+	&::placeholder
+		font: 400 14px/1 var(--font-roboto)
+		color: var(--color-white)
+
+.form__input
+	height: 58px
+
+.form__textarea
+	height: 100%
+
+	+media-max-width(900)
+		height: 135px
+
+.form__checkbox
+	display: none
+	opacity: 0
+	width: 0.00001px
+	height: 0.00001px
+	visibility: hidden
+
+	&:checked + .form__flex .form__span
+		background: url('/public/image/form-checkbox-checked.svg') no-repeat center
+		background-size: 16px 10px
+
+.form__flex
+	display: grid
+	grid-auto-flow: column
+	cursor: pointer
+
+.form__span
+	display: grid
+	box-sizing: border-box
+	width: 25px
+	min-width: 25px
+	height: 25px
+	border-radius: 2px
+	border: 1px solid var(--color-border-beige)
+
+.form__label
+	font: 400 12px/1 var(--font-roboto)
+	margin: 2px 0 0 15px
+
+.form__button
+	display: grid
+	width: 230px
+	height: 56px
+	margin: 0 0 0 auto
+	background: var(--color-dark-beige)

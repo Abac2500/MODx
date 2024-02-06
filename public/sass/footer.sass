@@ -1,0 +1,139 @@
+.footer
+	border-top: 1px solid var(--color-hr-beige)
+	padding: 50px 0 110px
+
+	+media-max-width(1250)
+		padding: 50px 0 86px
+
+.footer__logo
+	display: grid
+
+.footer__container
+	display: grid
+	grid-template-columns: repeat(3, min-content)
+	grid-column-gap: 20px
+	justify-content: space-between
+	margin: 70px 0 0
+
+	+media-max-width(1250)
+		grid-template-columns: 1fr
+		grid-row-gap: 30px
+
+	+media-max-width(900)
+		margin: 60px 0 0
+
+.footer__item
+	display: grid
+	grid-auto-rows: min-content
+	white-space: nowrap
+
+	+media-max-width(500)
+		white-space: normal
+
+.footer__phone
+	display: grid
+	font: 400 25px/1 var(--font-proxima)
+
+.footer__email
+	margin: 12px 0 0
+
+.footer__address
+	margin: 22px 0 0
+
+.footer__email,
+.footer__address
+	display: grid
+	font: 400 20px/1 var(--font-proxima)
+
+.footer__info
+	display: grid
+	grid-auto-flow: column
+	grid-column-gap: 18px
+	margin: 28px 0 0
+
+	p
+		font: 400 18px/1 var(--font-proxima)
+		color: var(--color-dark-beige)
+
+		+media-max-width(900)
+			&:last-child
+				display: none
+
+	+media-max-width(900)
+		margin: 18px 0 0
+
+.footer__menu
+	display: grid
+	grid-template-columns: repeat(2, min-content)
+	grid-gap: 42px 64px
+
+	+media-max-width(1250)
+		width: 100%
+		justify-content: space-between
+
+	+media-max-width(900)
+		grid-gap: 24px 24px
+
+.footer__li,
+.footer__link
+	display: grid
+
+.footer__link
+	font: 400 20px/1 var(--font-proxima)
+	color: var(--color-grey)
+	text-transform: uppercase
+
+	+media-max-width(900)
+		font-size: 18px
+
+	+media-max-width(500)
+		white-space: nowrap
+
+.footer__sub
+	border: 1px solid var(--color-dark-beige)
+	width: 270px
+	height: 50px
+	font: 400 20px/1 var(--font-proxima)
+	color: var(--color-dark-beige)
+
+	+media-max-width(900)
+		width: 100%
+
+.footer__media
+	display: grid
+	grid-auto-flow: column
+	grid-auto-columns: min-content
+	grid-column-gap: 45px
+	margin: 48px 0 0 auto
+
+	+media-max-width(1250)
+		margin: 40px 0 0
+
+	+media-max-width(900)
+		margin: 32px auto 0 auto
+
+.footer__social
+	display: grid
+
+	&:hover
+		.footer__icon
+			transform: scale(1.4)
+
+.footer__icon
+	display: grid
+	width: 33px
+	height: 25px
+	object-fit: contain
+	object-position: center
+	transition: all .3s ease
+
+.footer__about
+	font: 400 16px/1 var(--font-proxima)
+	text-align: right
+	margin: 24px 0 0
+
+	+media-max-width(1250)
+		text-align: left
+
+	+media-max-width(900)
+		text-align: center

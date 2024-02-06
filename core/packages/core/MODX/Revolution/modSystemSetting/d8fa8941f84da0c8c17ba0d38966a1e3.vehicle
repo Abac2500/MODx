@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '072b9db65e1b551e35831cd4d0d1261a',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'd8fa8941f84da0c8c17ba0d38966a1e3',
+  'native_key' => 'session_handler_class',
+  'object' => '{"key":"session_handler_class","value":"MODX\\\\Revolution\\\\modSessionHandler","xtype":"textfield","namespace":"core","area":"session","editedon":null}',
+);

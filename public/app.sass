@@ -1,0 +1,17 @@
+@mixin media-max-width($width)
+	@media only screen and (max-width: $width + px)
+		@content
+
+@mixin media-min-width($width)
+	@media only screen and (min-width: $width + px)
+		@content
+
+@import "sass/base"
+@import "sass/font"
+@import "sass/variable"
+@import "sass/general"
+@import "sass/header"
+@import "sass/main"
+@import "sass/plus"
+@import "sass/form"
+@import "sass/footer"

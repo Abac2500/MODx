@@ -1,0 +1,97 @@
+.header
+	position: relative
+
+.header__flex,
+.header__logo,
+.header__contact
+	display: grid
+	grid-auto-flow: column
+
+.header__flex
+	align-items: center
+	justify-content: space-between
+	padding: 30px 132px 30px 80px
+
+	+media-max-width(1450)
+		padding: 30px 132px 30px 30px
+
+	+media-max-width(900)
+		padding: 22px 30px
+		justify-content: flex-end
+
+	+media-max-width(500)
+		padding: 22px 20px
+
+.header__logo
+	align-items: baseline
+
+	+media-max-width(900)
+		display: none
+
+.header__tag
+	font: 700 16px/1 var(--font-cormorant)
+	margin: 0 0 0 10px
+
+	+media-max-width(1100)
+		display: none
+
+.header__contact
+	align-items: center
+
+.header__button
+	border: 1px solid var(--color-beige)
+	width: 230px
+	height: 56px
+
+	+media-max-width(900)
+		display: none
+
+.header__phone
+	font: 300 24px/1 var(--font-roboto)
+	margin: 0 0 0 38px
+
+	+media-max-width(900)
+		margin: 0
+		font-weight: 400
+
+.header__menu
+	position: absolute
+	top: 51px
+	right: 30px
+
+	+media-max-width(900)
+		top: 26px
+		left: 30px
+		right: auto
+
+	+media-max-width(500)
+		left: 20px
+
+.header__burger
+	position: relative
+	display: flex
+	justify-content: flex-end
+	width: 54px
+	height: 16px
+	cursor: pointer
+
+	&:before,
+	&:after
+		position: absolute
+		content: ''
+		height: 4px
+		background: var(--color-white)
+		left: 0
+		right: 0
+		transition: all .3s ease
+
+	&:before
+		top: 0
+
+	&:after
+		bottom: 0
+		left: 21px
+
+		+media-max-width(900)
+			left: 0
+			right: 21px
